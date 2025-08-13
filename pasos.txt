@@ -23,3 +23,13 @@ ls -> para listar todos los archivos de la carpeta en la que estoy
 6. VERSIONAR DE FORMA LOCAL EL PROYECTO CON LOS ARCHIVOS SELECCIONADOS
 
 git commit -m "Agregando archivos .csv para iniciar proyecto de python"
+
+7. SUBIR LA VERSION LOCAL A REPOSITORIO REMOTO EN LA NUBE
+
+git push origin MAIN
+
+8. PASOS QUE SE REPITEN
+
+git add .
+git commit -m "mensaje"
+git push origin MAIN

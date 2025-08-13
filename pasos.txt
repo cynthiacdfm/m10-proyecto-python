@@ -1,0 +1,25 @@
+1. INICIAR EL REPOSITORIO
+
+- git init - solo se hace una vez
+
+2. CAMBIAR A RAMA MAIN
+
+- git branch -M MAIN
+
+3. ENLAZAR CON REPOSITORIO REMOTO
+
+git remote add origin git@github.com:cynthiacdfm/m10-proyecto-python.git
+
+4. VERIFICAR SI QUEDO ENLAZADO EL REPOSITORIO REMOTO
+
+- git remote -v
+
+5. AGREGAR CAMBIOS DEL PROYECTO AL AREA DE PREPARACION O STAGE AGREGAR
+
+git add . (el punto es para agregar todo)
+
+ls -> para listar todos los archivos de la carpeta en la que estoy
+
+6. VERSIONAR DE FORMA LOCAL EL PROYECTO CON LOS ARCHIVOS SELECCIONADOS
+
+git commit -m "Agregando archivos .csv para iniciar proyecto de python"

@@ -86,7 +86,7 @@ plt.xlabel("Total vendido por empresa")
 plt.ylabel("Empresa")
 plt.title("Ventas por empresa")
 plt.gca().invert_yaxis()
-plt.savefig("Ventas por empresa.png", bbox_inches="tight")
+plt.savefig("Ventas_por_empresa.png", bbox_inches="tight")
 plt.close()
 
 # GRAFICO VENTAS POR VENDEDOR   
@@ -98,7 +98,7 @@ plt.xlabel("Total ventas por vendedor")
 plt.ylabel("Vendedor")
 plt.title("Ventas por vendedor")
 plt.gca().invert_yaxis()
-plt.savefig("Ventas por vendedor.png", bbox_inches="tight")
+plt.savefig("Ventas_por_vendedor.png", bbox_inches="tight")
 plt.close()
 
 #CREAR REPORTE PDF
@@ -144,8 +144,19 @@ dibujar_tabla("Monto vendido por empresa", ventas_por_empresa,"empresa_corregida
 dibujar_tabla("Monto vendido por vendedor", ventas_por_vendedor,"vendedor")
 
 
+#AGREGAR GRAFICOS AL REPORTE
+pdf.add_page()
+pdf.cell(200,10, "Gráfico: ventas por empresa", ln=True, align="C")
+pdf.image("Ventas_por_empresa.png", x=25, w=150)
+pdf.ln(10)
+
+pdf.cell(200,10, "Gráfico: ventas por vendedor", ln=True, align="C")
+pdf.image("Ventas_por_vendedor.png", x=25, w=150)
+pdf.ln(10)
+
 
 
 # IMPRIMIR DOCUMENTO PDF
 pdf.output("Reporte de Ventas.pdf")
+
 

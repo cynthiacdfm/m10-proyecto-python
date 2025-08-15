@@ -1,10 +1,3 @@
-# 1
-## 2
-### 3
-#### 4
-##### 5
-###### 6
-
 # PROYECTO DE LIMPIEZA DE DATOS Y GENERACIÓN DE REPORTE DE VENTAS
 
 Este proyecto consiste en...
